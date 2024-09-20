@@ -1,4 +1,5 @@
 const {app, BrowserWindow} = require("electron");
+const fetchRoot = require('./system');
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -6,14 +7,11 @@ const createWindow = () => {
         height: 700,
         autoHideMenuBar: true,
         minHeight: 200,
-        minWidth: 300
+        minWidth: 300,
+        icon: "../media/images/NUMBERS_ONLY128.png"
     });
 
-    win.loadFile("./pages/index.html");
-
-    win.on('resize', (_, _1) => {
-        console.log(`${win.getSize()}`);
-    });
+    win.loadFile(fetchRoot("./pages"));
 };
 
 
