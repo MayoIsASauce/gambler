@@ -2,7 +2,7 @@
   "name": "gambling",
   "version": "0.1.0",
   "description": "small application mimicking a gambling application",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/MayoIsASauce/gambler.git",
   "author": "MayoIsASauce",
   "private": false,
@@ -11,6 +11,6 @@
   },
 
   "scripts": {
-    "start": "electron ."
+    "start": "cd ./src/ && electron ."
   }
 }
