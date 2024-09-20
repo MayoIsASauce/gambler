@@ -11,7 +11,7 @@ const createWindow = () => {
         icon: "media/images/NUMBERS_ONLY128.png"
     });
 
-    win.loadFile(fetchRoot("./pages"));
+    win.loadFile(fetchRoot("./pages/GAY"));
 };
 
 
