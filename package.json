@@ -5,5 +5,12 @@
   "main": "index.js",
   "repository": "https://github.com/MayoIsASauce/gambler.git",
   "author": "MayoIsASauce",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "electron": "^32.1.1"
+  },
+
+  "scripts": {
+    "start": "electron ."
+  }
 }
