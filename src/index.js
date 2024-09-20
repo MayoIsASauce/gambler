@@ -11,7 +11,13 @@ const createWindow = () => {
         icon: "media/images/NUMBERS_ONLY128.png"
     });
 
-    win.loadFile(fetchRoot("./pages/GAY"));
+    win.loadFile(fetchRoot("./pages"));
+
+    if (process.platform == "darwin") {
+        win.on('closed', () => {
+            app.quit();
+        });
+    }
 };
 
 
