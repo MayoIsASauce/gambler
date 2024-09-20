@@ -8,7 +8,11 @@ const createWindow = () => {
         autoHideMenuBar: true,
         minHeight: 200,
         minWidth: 300,
-        icon: "media/images/NUMBERS_ONLY128.png"
+        icon: "media/images/NUMBERS_ONLY128.png",
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false
+        }
     });
 
     win.loadFile(fetchRoot("./pages"));
