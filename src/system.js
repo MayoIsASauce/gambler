@@ -12,7 +12,7 @@ function fetchRoot(dir_path) {
     if (fs.existsSync(full_name)) {
         return full_name;
     } else {
-        throw new MediaError(`MediaError\nUnable to locate index of "${dir_path}"`);
+        throw new Error(`File Not Found\nUnable to locate index of "${dir_path}"`);
     }
 }
 
