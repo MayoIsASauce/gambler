@@ -1,0 +1,17 @@
+{
+    "slots": {
+        "Crazy Coins": {
+            "id": "a821a94edc92",
+            "date-created": {
+                "day": 20,
+                "month": 9,
+                "year": 2024
+            },
+            "description": "My first game",
+            "page": "./pages/a821a94edc92/"
+        }
+    },
+    "blackjack": {},
+    "roulette": {},
+    "sports": {}
+}
